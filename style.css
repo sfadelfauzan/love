@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #ffe6e6;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hati utama */
+.heart {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: red;
+    transform: rotate(-45deg);
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -25px;
+    left: 0;
+}
+
+.heart::after {
+    left: 25px;
+    top: 0;
+}
